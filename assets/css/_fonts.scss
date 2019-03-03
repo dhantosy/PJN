@@ -1,0 +1,66 @@
+// fontello localstorage
+// {"font_size":16,"sessions":[{"name":"$current$","fontname":"pjn","css_prefix_text":"icon-","css_use_suffix":false,"hinting":true,"encoding":"pua","font_fullname":"","font_units":1000,"font_ascent":850,"font_copyright":"","fonts":{"custom_icons":{"collapsed":false,"glyphs":[]},"fontelico":{"collapsed":false,"glyphs":[]},"fontawesome":{"collapsed":false,"glyphs":[{"uid":"f6d72aa5ef8e8f0e553012af9a29a87e","code":61815,"css":"left"},{"uid":"fb94e23ae1e7660aa63cc5f351ec7560","code":61816,"css":"right"},{"uid":"8e04c98c8f5ca0a035776e3001ad2638","code":61594,"css":"facebook"},{"uid":"e9107949dd6c9e8ab2b29ae07156e38c","code":61665,"css":"linkedin"},{"uid":"627abcdb627cb1789e009c08e2678ef9","code":61593,"css":"twitter"}]},"entypo":{"collapsed":false,"glyphs":[]},"typicons":{"collapsed":false,"glyphs":[]},"iconic":{"collapsed":false,"glyphs":[]},"modernpics":{"collapsed":false,"glyphs":[]},"meteocons":{"collapsed":false,"glyphs":[]},"mfglabs":{"collapsed":false,"glyphs":[]},"maki":{"collapsed":false,"glyphs":[]},"zocial":{"collapsed":false,"glyphs":[]},"brandico":{"collapsed":false,"glyphs":[]},"elusive":{"collapsed":false,"glyphs":[{"uid":"7acc2dfe18c6f4548626696fab27ba8a","code":59392,"css":"play-circled2"}]},"linecons":{"collapsed":false,"glyphs":[]},"websymbols":{"collapsed":false,"glyphs":[]}},"selected_glyphs":["fb94e23ae1e7660aa63cc5f351ec7560","f6d72aa5ef8e8f0e553012af9a29a87e","e9107949dd6c9e8ab2b29ae07156e38c","8e04c98c8f5ca0a035776e3001ad2638","627abcdb627cb1789e009c08e2678ef9","7acc2dfe18c6f4548626696fab27ba8a"]}]}
+
+@font-face {
+  font-family: 'pjn';
+  src: url('../fonts/pjn.eot?31409659');
+  src: url('../fonts/pjn.eot?31409659#iefix') format('embedded-opentype'),
+       url('../fonts/pjn.woff2?31409659') format('woff2'),
+       url('../fonts/pjn.woff?31409659') format('woff'),
+       url('../fonts/pjn.ttf?31409659') format('truetype'),
+       url('../fonts/pjn.svg?31409659#pjn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'pjn';
+    src: url('../font/pjn.svg?31409659#pjn') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "pjn";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-play-circled2:before { content: '\e800'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-linkedin:before { content: '\f0e1'; } /* '' */
+.icon-left:before { content: '\f177'; } /* '' */
+.icon-right:before { content: '\f178'; } /* '' */
