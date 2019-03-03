@@ -23,6 +23,7 @@ footer {
 
     a {
       color: #fff;
+      @include transition (all, 0.2s, ease);
 
       &:hover {
         color: #3b55e6;

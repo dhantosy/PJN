@@ -5,7 +5,7 @@ section {
 .section {
 
   &__main {
-    padding-top: 200px;
+    padding-top: 130px;
     padding-bottom: 315px;
     position: relative;
 
@@ -27,7 +27,7 @@ section {
       position: absolute;
       top: 0;
       left: 0;
-      height: 340px;
+      height: 230px;
       width: 100%;
       background-position: 50% 100%;
       background-repeat: no-repeat;
@@ -100,6 +100,7 @@ section {
         padding: 10px 25px;
         border: 2px solid #fff;
         text-transform: uppercase;
+        @include transition(all, 0.2s, ease);
 
         &:hover {
           background-color: #c7e4ff;
@@ -127,7 +128,7 @@ section {
       position: absolute;
       bottom: -30px;
       left: 0;
-      height: 90%;
+      height: 85%;
       width: 50%;
       background-size: contain;
       background-position: 0 100%;
@@ -551,6 +552,7 @@ section {
     color: #fff;
     text-transform: uppercase;
     background-color: rgba(255,255,255,0);
+    @include transition(all, 0.2s, ease);
 
     &:hover {
       color: #fff;
@@ -559,13 +561,13 @@ section {
   }
 
   &__secondary {
-    padding: 10px 30px;
-    border: 2px solid #fff;
-    border-radius: 20px;
+    padding: 13px 30px;
+    border-radius: 30px;
     font-size: 16px;
     color: #fff;
     text-transform: uppercase;
     background-color: #2b7deb;
+    @include transition(all, 0.2s, ease);
 
     &:hover {
       color: #fff;
@@ -577,6 +579,7 @@ section {
     border: 2px solid #50cdde;
     background-color: rgba(80,205,222,1);
     color: #fff;
+    @include transition(all, 0.2s, ease);
 
     &:hover {
       color: #fff;

@@ -3,6 +3,10 @@ body {
   overflow-x: hidden;
 }
 
+button {
+  border: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -71,4 +75,12 @@ a {
   &.icon-right {
     left: 40px;
   }
+}
+
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+  -webkit-transition: $what $time $how;
+  -moz-transition:    $what $time $how;
+  -ms-transition:     $what $time $how;
+  -o-transition:      $what $time $how;
+  transition:         $what $time $how;
 }
