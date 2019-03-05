@@ -9,6 +9,19 @@
 	],
 "creatorBuild": "29156",
 "files": {
+	"/assets/css/_block-grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/css/_block-grid.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/css/_bootstrap-compass.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1093,48 +1106,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/assets/fonts/pjn.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/pjn.eot",
-		"oF": 0
-		},
-	"/assets/fonts/pjn.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/assets/fonts/pjn.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/assets/fonts/pjn.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/pjn.ttf",
-		"oF": 0
-		},
-	"/assets/fonts/pjn.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/pjn.woff",
-		"oF": 0
-		},
-	"/assets/fonts/pjn.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/pjn.woff2",
-		"oF": 0
-		},
 	"/assets/images/banner-ngajar.png": {
 		"ft": 32768,
 		"iS": 724609,
@@ -1188,6 +1159,105 @@
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/gallery-1.jpg": {
+		"ft": 16384,
+		"iS": 235995,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/gallery-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/gallery-2.jpg": {
+		"ft": 16384,
+		"iS": 219134,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/gallery-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/gallery-3.jpg": {
+		"ft": 16384,
+		"iS": 209589,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/gallery-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/gallery-4.jpg": {
+		"ft": 16384,
+		"iS": 182152,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/gallery-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/gallery-5.jpg": {
+		"ft": 16384,
+		"iS": 221212,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/gallery-5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/gallery-6.jpg": {
+		"ft": 16384,
+		"iS": 232440,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/gallery-6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/gallery-7.jpg": {
+		"ft": 16384,
+		"iS": 277346,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/gallery-7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/gallery-8.jpg": {
+		"ft": 16384,
+		"iS": 184116,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/gallery-8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/gallery-9.jpg": {
+		"ft": 16384,
+		"iS": 219288,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/gallery-9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/assets/images/graphic-main.png": {
@@ -1344,6 +1414,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/form-step-3.html",
+		"oF": 0
+		},
+	"/gallery.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/gallery.html",
 		"oF": 0
 		},
 	"/index.html": {
