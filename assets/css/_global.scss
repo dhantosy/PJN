@@ -5,6 +5,12 @@ body {
 
 button {
   border: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
 }
 
 img {

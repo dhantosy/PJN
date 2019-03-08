@@ -80,12 +80,15 @@
               <p>Sebutkan kegiatan sosial yang pernah kamu lakukan di dalam maupaun luar sekolah! (contoh: Program Penghijauan Hutan, Bakti Sosial Bersama Anak Yatim, Pentas Seni).</p>
             </div>
           </div>
-          <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          <div id="kegiatanSosial" class="row">
+            <div id="kegiatanSosialForm_1" class="col-xs-12 col-sm-8 col-sm-offset-2 can-clone">
               <div class="row">
+                <div class="btn__removeClone">
+                  <span>x</span>
+                </div>
                 <div class="col-xs-12 col-sm-6">
                   <label for="">Nama Kegiatan</label>
-                  <input type="text" placeholder="Nama Kegiatan" class="form-control">
+                  <input type="text" id="sosialKegiatan_1" placeholder="Nama Kegiatan" class="form-control">
                 </div>
                 <div class="col-xs-12 col-sm-6">
                   <label for="">Posisi</label>
@@ -93,13 +96,13 @@
                     <div class="row">
                       <div class="col-xs-12 col-sm-4">
                         <label>
-                          <input type="radio" name="position">
+                          <input type="radio" name="position" id="sosialPeserta_1">
                           <span>Peserta</span>
                         </label>
                       </div>
                       <div class="col-xs-12 col-sm-4">
                         <label>
-                          <input type="radio" name="position">
+                          <input type="radio" name="position" id="sosialPengurus_1">
                           <span>Pengurus</span>
                         </label>
                       </div>
@@ -110,7 +113,7 @@
               <div class="row">
                 <div class="col-xs-12 col-sm-6">
                   <label>Tingkat</label>
-                  <select name="" id="" class="form-control">
+                  <select name="" id="sosialTingkat_1" class="form-control">
                     <option value="" selected disabled>Pilih salah satu</option>
                     <option value="">01</option>
                     <option value="">02</option>
@@ -120,10 +123,18 @@
                   </select>
                 </div>
                 <div class="col-xs-12 col-sm-6">
-                  <label for="">Tahun</label>
-                  <input type="text" placeholder="Tahun" class="form-control">
+                  <label>Tahun</label>
+                  <input type="text" id="sosialTahun_1" placeholder="Tahun" class="form-control">
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <button id="tambah-kegiatan-sosial" class="btn__secondary">
+                <i class="icon-plus"></i>
+                <span>Tambah Informasi Kegiatan Sosial</span>
+              </button>
             </div>
           </div>
         </div>
