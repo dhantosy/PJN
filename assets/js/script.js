@@ -17,4 +17,16 @@ $(document).ready(function () {
     $frame.attr("src", $frame.attr("src")); 
   });
 
+  $("input[name=status]").on("change", function() {
+    var test = $(this).val();
+
+    if (test === "siswa") {
+      $("#data-sekolah").show();
+      $("#data-universitas").hide();
+    } else {
+      $("#data-universitas").show();
+      $("#data-sekolah").hide();
+    }
+  });
+
 });
