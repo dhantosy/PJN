@@ -52,7 +52,8 @@ $(document).ready(function () {
     var select = $('select', newElement).attr("name");
 
     current_id = id;
-    element.data('count', id);     
+    element.data('count', id);
+    newElement.find("input").val("");   
     newElement.attr("id",element.attr("id").split("_")[0]+"_"+id);
     newElement.data('id',id);
     
