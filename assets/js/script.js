@@ -1,18 +1,20 @@
 $(document).ready(function () {
 
-  $(".gallery__item a").fancybox({
-    arrows: true,
-    helpers: {
-      title: {
-        type: 'outside'
+  if ($("section").hasClass("section__gallery")) {
+    $(".gallery__item a").fancybox({
+      arrows: true,
+      helpers: {
+        title: {
+          type: 'outside'
+        }
+      },
+      afterLoad: function () {
+        var title = this.title ? this.title : " ";
+        var alt = $(this.element).find('img').attr('alt') ? $(this.element).find('img').attr('alt') : " ";
+        this.title = '<h4>' + title + '</h4>' + alt + '<br />';
       }
-    },
-    afterLoad: function () {
-      var title = this.title ? this.title : " ";
-      var alt = $(this.element).find('img').attr('alt') ? $(this.element).find('img').attr('alt') : " ";
-      this.title = '<h4>' + title + '</h4>' + alt + '<br />';
-    }
-  });
+    });
+  }
 
   $('.section__tab--title a').click(function (e) {
     e.preventDefault()
