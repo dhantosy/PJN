@@ -4,6 +4,14 @@ section {
 
 .section {
 
+  &__faqs {
+    margin: 50px 0;
+
+    h2 {
+      font-weight: 300;
+    }
+  }
+
   &__main {
     padding-top: 130px;
     padding-bottom: 315px;
@@ -760,4 +768,51 @@ section {
       }
     }
   }
+}
+
+.list {
+
+  &__numbered {
+    padding-left: 0;
+    margin: 50px 0;
+    list-style: none; 
+    counter-reset: li;
+
+    li {
+      counter-increment: step-counter;
+      list-style-position: inside;
+      margin-bottom: 60px;
+      font-weight: bold;
+
+      &:before {
+        content: counter(step-counter)'.';
+        color: #5c5c5c;
+        display: inline-block; 
+        width: 1em;
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__container {
+    margin-top: -46px;
+  }
+
+  &__title {
+    font-size: 18px;
+    color: #5c5c5c;
+    font-weight: bold;
+    padding-left: 35px;
+    padding-top: 20px;
+    border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+    padding-bottom: 20px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    font-weight: 400;
+  }
+
 }

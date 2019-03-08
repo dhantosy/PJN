@@ -1411,8 +1411,8 @@
 		"oA": 0,
 		"oAP": "/assets/images/lightbox/fancybox_sprite@2x.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1525,6 +1525,14 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/faqs.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/faqs.html",
+		"oF": 0
 		},
 	"/form-step-1.html": {
 		"cB": 0,
