@@ -34,6 +34,11 @@ $(document).ready(function () {
     nextElement($('#kegiatanSosialForm_1'));
     return false;
   })
+
+  $('#tambah-prestasi').on("click", function() {
+    nextElement($('#prestasiForm_1'));
+    return false;
+  })
   
   function nextElement(element){ 
     if (current_id !== 9) {
