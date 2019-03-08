@@ -39,6 +39,11 @@ $(document).ready(function () {
     nextElement($('#prestasiForm_1'));
     return false;
   })
+
+  $('#tambah-organisasi').on("click", function() {
+    nextElement($('#organisasiForm_1'));
+    return false;
+  })
   
   function nextElement(element){ 
     if (current_id !== 9) {

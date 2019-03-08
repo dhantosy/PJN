@@ -87,11 +87,11 @@
                   <span>x</span>
                 </div>
                 <div class="col-xs-12 col-sm-6">
-                  <label for="">Nama Kegiatan</label>
+                  <label>Nama Kegiatan</label>
                   <input type="text" id="sosialKegiatan_1" placeholder="Nama Kegiatan" class="form-control">
                 </div>
                 <div class="col-xs-12 col-sm-6">
-                  <label for="">Posisi</label>
+                  <label>Posisi</label>
                   <div class="radio">
                     <div class="row">
                       <div class="col-xs-12 col-sm-4">
@@ -195,15 +195,19 @@
               <p>Sebutkan pengalaman organisasi di dalam maupun di luar sekolah yang pernah kamu jalani! (contoh: Ketua Seksi Olahraga OSIS SMA, Anggota Karang Taruna).</p>
             </div>
           </div>
-          <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-              <div class="col-xs-12 col-sm-6">
-                  <label for="">Tahun</label>
-                  <input type="text" placeholder="Tahun" class="form-control">
+          <div id="organisasi" class="row">
+            <div id="organisasiForm_1" class="col-xs-12 col-sm-8 col-sm-offset-2 can-clone">
+              <div class="row">
+                <div class="btn__removeClone">
+                  <span>x</span>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <label>Tahun</label>
+                  <input type="text" placeholder="Tahun" id="organisasiTahun_1" class="form-control">
                 </div>
                 <div class="col-xs-12 col-sm-6">
                   <label>Tingkat</label>
-                  <select name="" id="" class="form-control">
+                  <select name="" id="organisasiTingkat_1" class="form-control">
                     <option value="" selected disabled>Pilih salah satu</option>
                     <option value="">01</option>
                     <option value="">02</option>
@@ -212,6 +216,15 @@
                     <option value="">05</option>
                   </select>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <button id="tambah-organisasi" class="btn__secondary">
+                <i class="icon-plus"></i>
+                <span>Tambah Pengalaman Organisasi</span>
+              </button>
             </div>
           </div>
         </div>
