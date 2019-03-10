@@ -8,6 +8,30 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,900|Playfair+Display:400i" rel="stylesheet">
   </head>
   <body>
+    <nav class="nav__mobile">
+      <div class="hamburger hamburger--collapse js-hamburger">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
+    </nav>
+    <div class="nav__mobileMenu">
+      <div class="nav__mobileMenu--container">
+        <div class="nav__mobileMenu--item active">
+          <a href="index.html">Beranda</a>
+        </div>
+        <div class="nav__mobileMenu--item">
+          <a href="gallery.html">Galeri</a>
+        </div>
+        <div class="nav__mobileMenu--item">
+          <a href="faqs.html">FAQ</a>
+        </div>
+        <div class="nav__mobileMenu--item">
+          <a href="index.html#contact">Kontak Kami</a>
+        </div>
+        <a href="" class="btn__secondary">Masuk / Daftar</a>
+      </div>
+    </div>
     <header>
       <div class="row">
         <nav class="nav__left">
@@ -41,7 +65,7 @@
       <div class="graphic"></div>
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-5">
+          <div class="col-xs-12 col-sm-7 col-md-5">
             <div class="slider__container">
               <div class="slider__item">
                 <div class="slider__title">
@@ -74,7 +98,7 @@
     <section class="section__about">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-5 col-sm-offset-6">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-md-offset-6">
             <div class="section__about--title">
               <h6>Tentang Pengajar Jelajah Nusa</h6>
               <h3>Ayo Jadi Relawan!</h3>
@@ -132,12 +156,22 @@
         <li class="section__tab--title">
           <a href="#penempatan">Lokasi Penempatan</a>
         </li>
+        <li class="section__tab--title select-tab">
+          <div class="select-tab-container">
+            <select name="" id="select-tab">
+              <option value="0">Info Program</option>
+              <option value="1">Waktu Pelaksanaan</option>
+              <option value="2">Tahapan Calon</option>
+              <option value="3">Lokasi Penempatan</option>
+            </select>
+          </div>
+        </li>
       </ul>
       <div class="container">
         <div class="tab-content section__tab--body">
           <div id="program" class="tab-pane section__tab--content active">
             <div class="row">
-              <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+              <div class="col-sm-12 col-md-8 col-md-offset-2">
                 <div class="section__tab--info">
                   <div class="content">
                     <h5>Project make your move</h5>
@@ -227,13 +261,7 @@
             </div>
           </div>
           <div id="penempatan" class="tab-pane section__tab--content">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-12">
-                  <img src="assets/images/map.png" alt="">
-                </div>
-              </div>
-            </div>
+            <img src="assets/images/map.png" alt="">
           </div>
         </div>
       </div>
@@ -279,7 +307,7 @@
     <section id="contact" class="section__contact">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+          <div class="col-sm-12 col-md-6 col-md-offset-3">
             <div class="section__contact--title">
               <span>Kontak Kami</span>
               <h3>Lorem ipsum dolor sit amet.</h3>
