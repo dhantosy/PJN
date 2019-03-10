@@ -67,6 +67,10 @@ a {
   font-weight: 900;
 }
 
+.f-blue {
+  color: #2c7dea;
+}
+
 @mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
   -webkit-transition: $what $time $how;
   -moz-transition:    $what $time $how;
