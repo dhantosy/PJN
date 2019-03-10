@@ -1,10 +1,30 @@
 $(document).ready(function () {
 
+  if ($(window).width() < 481) {
+    $(window).scroll(function() {
+      var documentScrolled = $(document).scrollTop();
+      if (documentScrolled > 300) {
+        $('header').addClass("active");
+        $('.nav__mobile').addClass("active");
+      } else {
+        $('header').removeClass("active");
+        $('.nav__mobile').removeClass("active");
+      }
+    });
+  };
+
   $('.hamburger').on("click", function() {
     $(this).toggleClass("is-active");
     $(".nav__mobileMenu").toggleClass("active");
     $("body").toggleClass("active");
-    $(".nav__mobile").toggleClass("active");
+
+    if ($("header").hasClass("active")) {
+      if ($(".nav__mobile").hasClass("active")) {
+        $(this).removeClass("active");
+      } else {
+        $(this).addClass("active");
+      }
+    }
   });
 
   $('.nav__mobileMenu--item a').on("click", function() {
