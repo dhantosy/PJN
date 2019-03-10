@@ -1,5 +1,15 @@
 $(document).ready(function () {
 
+  $('.hamburger').on("click", function() {
+    $(this).toggleClass("is-active");
+    $(".nav__mobileMenu").toggleClass("active");
+    $("body").toggleClass("active");
+  });
+
+  $('#select-tab').on('change', function (e) {
+    $('.section__tab--title a').eq($(this).val()).tab('show');
+  });
+
   if ($("section").hasClass("section__gallery")) {
     $(".gallery__item a").fancybox({
       arrows: true,

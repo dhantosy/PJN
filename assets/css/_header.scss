@@ -12,6 +12,74 @@ nav {
 
 .nav {
 
+  &__mobile {
+    float: left;
+    display: none;
+    position: absolute;
+    left: 20px;
+    z-index: 10;
+    top: 20px;
+
+    @media only screen and (max-width: 900px) {
+      display: inline-block;
+    }
+
+    @media only screen and (max-width: 480px) {
+      top: 20px;
+      left: 10px;
+    }
+
+    @media only screen and (max-width: 360px) {
+      top: 10px;
+      left: 0;
+    }
+  }
+
+  &__mobileMenu {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.98);
+    opacity: 0;
+    z-index: 0;
+    @include transition(all, 0.2s, ease);
+
+    &.active {
+      opacity: 1;
+      z-index: 9;
+    }
+
+    &--item {
+      margin-bottom: 24px;
+      text-transform: uppercase;
+
+      a {
+        font-size: 24px;
+
+        @media only screen and (max-width: 480px) {
+          font-size: 18px;
+        }    
+      }
+
+      &.active {
+
+        a {
+          border-bottom: 3px solid #337ab7;
+        }
+      }
+    }
+
+    &--container {
+      padding: 90px 20px;
+      text-align: center;
+    }
+
+    .btn__secondary {
+      margin-top: 20px;
+      display: inline-block;
+    }
+  }
+
   &__left {
     float: left;
     margin-top: 25px;
@@ -25,6 +93,22 @@ nav {
     left: 0;
     width: 100%;
     z-index: 1;
+
+    @media only screen and (max-width: 900px) {
+      right: 140px;
+      left: initial;
+      width: auto;
+    }
+
+    @media only screen and (max-width: 480px) {
+      right: 60px;
+      top: 15px;
+    }
+
+    @media only screen and (max-width: 360px) {
+      right: 40px;
+      top: 10px;
+    }
   }
 
   &__right {
@@ -32,6 +116,26 @@ nav {
     margin-top: 25px;
     z-index: 2;
     padding-right: 140px;
+
+    @media only screen and (max-width: 900px) {
+      padding-right: 280px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      padding-right: 180px;
+      margin-right: -10px;
+    }
+
+    .btn__main {
+
+      @media only screen and (max-width: 991px) {
+        font-size: 12px;
+      }
+
+      @media only screen and (max-width: 900px) {
+        display: none;
+      }
+    }
 
     img {
       top: -46px;
@@ -44,6 +148,10 @@ nav {
   &__item {
     display: inline-block;
 
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
+
     a {
       color: #fff;
       border-bottom: 0 solid rgba(255,255,255,0);
@@ -52,6 +160,10 @@ nav {
       padding-bottom: 5px;
       margin: 0 10px;
       @include transition(all, 0.2s, ease);
+
+      @media only screen and (max-width: 1024px) {
+        font-size: 14px;
+      }
 
       &:hover {
         text-decoration: none;
@@ -73,6 +185,107 @@ nav {
 
     img {
       max-width: 90%;
+
+      @media only screen and (max-width: 480px) {
+        max-width: 65%;
+      }
+
+      @media only screen and (max-width: 360px) {
+        max-width: 55%;
+      }
     }
   }
+}
+
+.hamburger {
+  display: inline-block;
+  overflow: visible;
+  margin: 0;
+  padding: 15px;
+  cursor: pointer;
+  transition-timing-function: linear;
+  transition-duration: .15s;
+  transition-property: opacity,filter;
+  text-transform: none;
+  color: inherit;
+  border: 0;
+  background-color: transparent;
+
+  &-box {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }
+
+  &-inner {
+    top: 50%;
+    display: block;
+    margin-top: -2px;
+  }
+}
+
+.hamburger-inner,
+.hamburger-inner:before,
+.hamburger-inner:after, {
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  transition-timing-function: ease;
+  transition-duration: .15s;
+  transition-property: transform;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.hamburger--collapse .hamburger-inner {
+    top: auto;
+    bottom: 0;
+    transition-delay: .13s;
+    transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+    transition-duration: .13s;
+}
+
+.hamburger-inner:after, .hamburger-inner:before {
+    display: block;
+    content: "";
+}
+
+.hamburger-inner:before {
+    top: -10px;
+}
+
+.hamburger-inner:after {
+    bottom: -10px;
+}
+
+.hamburger--collapse .hamburger-inner:before {
+    transition: top .12s cubic-bezier(.33333,.66667,.66667,1) .2s,transform .13s cubic-bezier(.55,.055,.675,.19);
+}
+
+.hamburger--collapse .hamburger-inner:after {
+    top: -20px;
+    transition: top .2s cubic-bezier(.33333,.66667,.66667,1) .2s,opacity .1s linear;
+}
+
+.hamburger--collapse.is-active .hamburger-inner {
+    transition-delay: .22s;
+    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    transform: translate3d(0,-10px,0) rotate(-45deg);
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+    background-color: #2c7dea;
+}
+
+.hamburger--collapse.is-active .hamburger-inner:before {
+    top: 0;
+    transition: top .1s cubic-bezier(.33333,0,.66667,.33333) .16s,transform .13s cubic-bezier(.215,.61,.355,1) .25s;
+    transform: rotate(-90deg);
+}
+
+.hamburger--collapse.is-active .hamburger-inner:after {
+    top: 0;
+    transition: top .2s cubic-bezier(.33333,0,.66667,.33333),opacity .1s linear .22s;
+    opacity: 0;
 }

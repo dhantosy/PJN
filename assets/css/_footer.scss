@@ -4,6 +4,10 @@ footer {
   color: #fff;
   font-size: 13px;
 
+  @media only screen and (max-width: 767px) {
+    text-align: center;
+  }
+
   span {
     display: inline-block;
     margin-top: 5px;
@@ -15,6 +19,11 @@ footer {
   &__container {
     text-align: right;
     font-size: 18px;
+
+    @media only screen and (max-width: 767px) {
+      text-align: center;
+      margin-top: 20px;
+    }
   }
 
   &__item {

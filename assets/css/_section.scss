@@ -17,6 +17,20 @@ section {
     padding-bottom: 315px;
     position: relative;
 
+    @media only screen and (max-width: 767px) {
+      padding-bottom: 135px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      padding-top: 120px;
+      padding-bottom: 105px;
+    }
+
+    @media only screen and (max-width: 360px) {
+      padding-top: 80px;
+      padding-bottom: 105px;
+    }
+
     .graphic {
       background-image: url(../images/graphic-main.png);
       position: absolute;
@@ -27,6 +41,18 @@ section {
       background-size: contain;
       background-repeat: no-repeat;
       background-position: 100% 90%;
+
+      @media only screen and (max-width: 1140px) {
+        right: -140px;
+      }
+
+      @media only screen and (max-width: 992px) {
+        right: -240px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
     }
     
     &:before {
@@ -41,6 +67,22 @@ section {
       background-repeat: no-repeat;
       background-size: cover;
       z-index: 2;
+
+      @media only screen and (max-width: 1140px) {
+        height: 210px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        height: 131px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        height: 90px;
+      }
+
+      @media only screen and (max-width: 360px) {
+        height: 62px;
+      }
     }
 
     &:after {
@@ -55,6 +97,23 @@ section {
       background-repeat: no-repeat;
       background-size: cover;
       z-index: 2;
+
+      @media only screen and (max-width: 1140px) {
+        height: 280px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        height: 120px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        height: 80px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        height: 60px;
+      }
+
     }
   }
 
@@ -88,6 +147,14 @@ section {
 
     &--body {
       padding: 40px 20px;
+
+      @media only screen and (max-width: 800px) {
+        padding: 40px 0;
+      }
+
+      #calon {
+        text-align: center;
+      }
     }
 
     &--header {
@@ -100,6 +167,10 @@ section {
       display: inline-block;
       vertical-align: middle;
       margin: 0 10px;
+
+      @media only screen and (max-width: 900px) {
+        display: none;
+      }
 
       a {
         color: #2c7dea;
@@ -122,12 +193,64 @@ section {
           color: #fff;
         }
       }
+
+      &.select-tab {
+        display: none;
+
+        @media only screen and (max-width: 900px) {
+          display: block;
+        }
+
+        .select-tab-container {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+
+          &:after {
+            content: '▾';
+            position: absolute;
+            right: 12px;
+            font-size: 18px;
+            top: 8px;
+            color: #fff;
+          }
+        }
+
+        select {
+          cursor: pointer;
+          border-radius: 20px;
+          padding: 10px 25px;
+          border: 2px solid #fff;
+          text-transform: uppercase;
+          background-color: #4e99ff;
+          color: #fff;
+          display: inline-block;
+          transition: all .2s ease;
+          -webkit-appearance: none;
+
+          &:active,
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .container {
+
+      @media only screen and (max-width: 991px) {
+        width: 100%;
+      }
     }
   }
 
   &__about {
     padding-top: 50px;
     padding-bottom: 30px;
+
+    @media only screen and (max-width: 991px) {
+      text-align: center;
+    }
 
     &:before {
       content: '';
@@ -140,6 +263,10 @@ section {
       width: 50%;
       background-size: contain;
       background-position: 0 100%;
+
+      @media only screen and (max-width: 991px) {
+        display: none;
+      }
     }
 
     &--desc {
@@ -160,11 +287,23 @@ section {
     background-size: cover;
     text-align: center;
 
+    @media only screen and (max-width: 991px) {
+      height: 400px;
+    }
+
     &--content {
       padding-top: 150px;
 
+      @media only screen and (max-width: 991px) {
+        padding-top: 100px;
+      }
+
       h2 {
         color: #fff;
+
+        @media only screen and (max-width: 991px) {
+          font-size: 24px;
+        }
       }
 
       .hashtag {
@@ -190,8 +329,24 @@ section {
     background-size: cover;
     text-align: center;
 
+    @media only screen and (max-width: 767px) {
+      height: auto;
+      background-image: none;
+      background-color: #3d9aff;
+    }
+
     .container {
       padding-top: 140px;
+
+      @media only screen and (max-width: 991px) {
+        width: 100%;
+        padding-bottom: 100px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
     }
   }
 
@@ -200,12 +355,22 @@ section {
     padding: 30px 0;
     color: #fff;
 
+    @media only screen and (max-width: 767px) {
+      text-align: center;
+    }
+
     &--text {
       font-size: 18px;
     }
 
     &--right {
       text-align: right;
+
+      @media only screen and (max-width: 767px) {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -240,12 +405,21 @@ section {
     }
 
     .row-no-gutters {
+
       > div:first-child {
         padding-right: 5px;
+
+        @media only screen and (max-width: 767px) {
+          padding-right: 0;
+        }
       }
 
       > div:last-child {
         padding-left: 5px;
+
+        @media only screen and (max-width: 767px) {
+          padding-left: 0;
+        }
       }
     }
 
@@ -321,6 +495,15 @@ section {
       border-radius: 50%;
       position: relative;
 
+      @media only screen and (max-width: 1199px) {
+        width: 220px;
+        height: 220px;
+      }
+
+      @media only screen and (max-width: 991px) {
+        margin-bottom: 30px;
+      }
+
       &:before {
         content: '';
         width: 100px;
@@ -340,6 +523,11 @@ section {
       position: relative;
       margin: 6px auto;
 
+      @media only screen and (max-width: 1199px) {
+        width: 205px;
+        height: 205px;
+      }
+
       &:before {
         content: '';
         width: 215px;
@@ -352,6 +540,11 @@ section {
         right: 0;
         top: 0;
         bottom: 0;
+
+        @media only screen and (max-width: 1199px) {
+          width: 185px;
+          height: 185px;
+        }
       }
 
       span {
@@ -365,6 +558,11 @@ section {
         transform: translate(-50%, -50%);
         left: 50%;
         top: 50%;
+        
+        @media only screen and (max-width: 1199px) {
+          font-size: 18px;
+        }
+
       }
     }
   }
@@ -380,6 +578,10 @@ section {
     right: 0;
     margin: auto;
 
+    @media only screen and (max-width: 800px) {
+      top: -40px;
+    }
+
     &:before {
       content: '';
       height: 80px;
@@ -390,6 +592,10 @@ section {
       margin: auto;
       left: 0;
       right: 0;
+
+      @media only screen and (max-width: 800px) {
+        display: none;
+      }
     }
 
     &:after {
@@ -403,11 +609,20 @@ section {
       left: 0;
       right: 0;
       margin: auto;
+
+      @media only screen and (max-width: 800px) {
+        display: none;
+      }
     }
 
     &.bottom {
       bottom: -100px;
       top: initial;
+
+      @media only screen and (max-width: 800px) {
+        bottom: initial;
+        top: -40px;
+      }
 
       &:before {
         content: '';
@@ -439,6 +654,10 @@ section {
   &__wrapper {
     text-align: center;
     margin: 150px 0;
+
+    @media only screen and (max-width: 800px) {
+      margin: 0 20px;
+    }
   }
 
   &__date {
@@ -447,6 +666,10 @@ section {
     font-weight: 900;
     text-transform: uppercase;
     margin-bottom: -20px;
+
+    @media only screen and (max-width: 991px) {
+      font-size: 48px;
+    }
   }
 
   &__month {
@@ -454,6 +677,11 @@ section {
     font-size: 24px;
     font-weight: 900;
     text-transform: uppercase;
+
+    @media only screen and (max-width: 991px) {
+      font-size: 18px;
+      margin-top: 5px;
+    }
   }
 
   &__item {
@@ -465,8 +693,25 @@ section {
     padding: 40px 50px;
     margin: auto;
 
+    @media only screen and (max-width: 1199px) {
+      padding: 30px 50px;
+      height: 300px;
+      width: 300px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      margin: 20px auto;
+    }
+
     p {
       margin-top: 10px;
+    }
+
+    img {
+
+      @media only screen and (max-width: 1199px) {
+        max-width: 40%;
+      }
     }
   }
 
@@ -478,7 +723,20 @@ section {
     width: 200px;
     text-align: center;
     height: 200px;
-    padding-top: 40px ;
+    padding-top: 40px;
+
+    @media only screen and (max-width: 991px) {
+      width: 160px;
+      height: 160px;
+      padding-top: 20px;
+      margin: 0 -9px 0 -10px;
+      padding-top: 35px;
+    }
+
+    @media only screen and (max-width: 800px) {
+      display: block;
+      margin: 40px auto 70px;
+    }
   }
 
   &__top {
@@ -498,6 +756,13 @@ section {
         top: 0;
         left: 0;
         z-index: 2;
+
+        @media only screen and (max-width: 991px) {
+          border: 15px solid #2c7dea;
+          width: 160px;
+          height: 80px;
+          border-bottom: 0;
+        }
       }
     }
 
@@ -515,6 +780,13 @@ section {
         border-bottom: 0;
         top: 0;
         left: 0;
+
+        @media only screen and (max-width: 991px) {
+          border: 15px solid #91e1f6;
+          width: 160px;
+          height: 80px;
+          border-bottom: 0;
+        }
       }
     }
 
@@ -535,6 +807,13 @@ section {
         border-top: 0;
         bottom: 0;
         left: 0;
+
+        @media only screen and (max-width: 991px) {
+          border: 15px solid #91e1f6;
+          border-top: 0;
+          width: 160px;
+          height: 80px;
+        }
       }
     }
 
@@ -553,6 +832,13 @@ section {
         bottom: 0;
         left: 0;
         z-index: 2;
+
+        @media only screen and (max-width: 991px) {
+          border: 15px solid #4e99ff;
+          border-top: 0;
+          width: 160px;
+          height: 80px;
+        }
       }
     }
   }
@@ -628,6 +914,11 @@ section {
     max-height: 265px;
     overflow-y: hidden;
     padding-top: 40px;
+
+    @media only screen and (max-width: 767px) {
+      text-align: center;
+      max-height: 265px;
+    }
   }
 
   &__text {
