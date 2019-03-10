@@ -71,6 +71,14 @@ a {
   color: #2c7dea;
 }
 
+.border-dots {
+  border-bottom: 1px dotted;
+}
+
+.border-right {
+  border-right: 1px solid #bfbfbf;
+}
+
 @mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
   -webkit-transition: $what $time $how;
   -moz-transition:    $what $time $how;
