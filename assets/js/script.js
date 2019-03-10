@@ -4,6 +4,14 @@ $(document).ready(function () {
     $(this).toggleClass("is-active");
     $(".nav__mobileMenu").toggleClass("active");
     $("body").toggleClass("active");
+    $(".nav__mobile").toggleClass("active");
+  });
+
+  $('.nav__mobileMenu--item a').on("click", function() {
+    $(".hamburger").removeClass("is-active");
+    $(".nav__mobileMenu").removeClass("active");
+    $("body").removeClass("active");
+    $(".nav__mobile").removeClass("active");
   });
 
   $('#select-tab').on('change', function (e) {

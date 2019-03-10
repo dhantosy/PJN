@@ -38,6 +38,10 @@ nav {
       top: 10px;
       left: 0;
     }
+
+    &.active {
+      position: fixed;
+    }
   }
 
   &__mobileMenu {
