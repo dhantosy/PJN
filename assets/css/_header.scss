@@ -1,7 +1,7 @@
 header {
   background-color: #2c7dea;
   text-align: center;
-  padding: 20px 40px 40px;
+  padding: 20px 40px 50px;
   position: relative;
 }
 
@@ -98,6 +98,7 @@ nav {
       right: 140px;
       left: initial;
       width: auto;
+      top: 9px;
     }
 
     @media only screen and (max-width: 480px) {

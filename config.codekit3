@@ -1224,7 +1224,7 @@
 		"oAP": "/assets/images/gallery-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/gallery-2.jpg": {
@@ -1235,7 +1235,7 @@
 		"oAP": "/assets/images/gallery-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/gallery-3.jpg": {
@@ -1246,7 +1246,7 @@
 		"oAP": "/assets/images/gallery-3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/gallery-4.jpg": {
@@ -1257,7 +1257,7 @@
 		"oAP": "/assets/images/gallery-4.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/gallery-5.jpg": {
@@ -1268,7 +1268,7 @@
 		"oAP": "/assets/images/gallery-5.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/gallery-6.jpg": {
@@ -1279,7 +1279,7 @@
 		"oAP": "/assets/images/gallery-6.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/gallery-7.jpg": {
@@ -1290,7 +1290,7 @@
 		"oAP": "/assets/images/gallery-7.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/gallery-8.jpg": {
@@ -1301,7 +1301,7 @@
 		"oAP": "/assets/images/gallery-8.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/gallery-9.jpg": {
@@ -1312,7 +1312,18 @@
 		"oAP": "/assets/images/gallery-9.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/assets/images/graphic-error.png": {
+		"ft": 32768,
+		"iS": 84215,
+		"oA": 0,
+		"oAP": "/assets/images/graphic-error.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"/assets/images/graphic-main.png": {
@@ -1320,6 +1331,17 @@
 		"iS": 0,
 		"oA": 0,
 		"oAP": "/assets/images/graphic-main.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/graphic-success.png": {
+		"ft": 32768,
+		"iS": 54951,
+		"oA": 0,
+		"oAP": "/assets/images/graphic-success.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
