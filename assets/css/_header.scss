@@ -126,19 +126,14 @@ nav {
     z-index: 1;
 
     @media only screen and (max-width: 900px) {
-      right: 140px;
-      left: initial;
-      width: auto;
       top: 9px;
     }
 
     @media only screen and (max-width: 480px) {
-      right: 60px;
       top: 15px;
     }
 
     @media only screen and (max-width: 360px) {
-      right: 40px;
       top: 10px;
     }
   }
