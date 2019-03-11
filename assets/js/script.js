@@ -65,6 +65,12 @@ $(document).ready(function () {
     fade: true
   });
 
+  var videoSrc = $("#videoModal iframe").attr("src");
+  $('#videoModal').on('show.bs.modal', function () { // on opening the modal
+    // set the video to autostart
+    $("#videoModal iframe").attr("src", videoSrc+"?autoplay=1");
+  });
+
   $("#videoModal").on('hidden.bs.modal', function (e) { 
     var $this = $(this); 
     var $frame = $this.find('iframe'); 
