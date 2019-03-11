@@ -66,8 +66,7 @@ $(document).ready(function () {
   });
 
   var videoSrc = $("#videoModal iframe").attr("src");
-  $('#videoModal').on('show.bs.modal', function () { // on opening the modal
-    // set the video to autostart
+  $('#videoModal').on('show.bs.modal', function () {
     $("#videoModal iframe").attr("src", videoSrc+"?autoplay=1");
   });
 
@@ -77,10 +76,17 @@ $(document).ready(function () {
     $frame.attr("src", $frame.attr("src")); 
   });
 
-  $("input[name=status]").on("change", function() {
-    var test = $(this).val();
+  $('.animate__contact a').click(function(){
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 1000);
+    return false;
+});
 
-    if (test === "siswa") {
+  $("input[name=status]").on("change", function() {
+    var inputVal = $(this).val();
+
+    if (inputVal === "siswa") {
       $("#data-sekolah").show();
       $("#data-universitas").hide();
     } else {
