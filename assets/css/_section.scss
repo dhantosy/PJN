@@ -941,6 +941,14 @@ section {
     line-height: 18px;
     cursor: pointer;
     z-index: 5;
+
+    @media only screen and (max-width: 480px) {
+      position: relative;
+      margin-bottom: 10px;
+      float: right;
+      right: 15px;
+      top: 30px;
+    }
   }
 
   &__main {
