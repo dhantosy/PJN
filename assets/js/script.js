@@ -139,4 +139,10 @@ $(document).ready(function () {
     $(this).parents('.can-clone').remove();
   });
 
+  var options = {
+    valueNames: [ 'name', 'email', 'school', 'province' ]
+  };
+
+  var userList = new List('result', options);
+
 });
