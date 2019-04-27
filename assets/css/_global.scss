@@ -32,8 +32,19 @@ h6 {
   margin: 3px 0;
 }
 
+h1 {
+  
+  @media only screen and (max-width: 540px) {
+    font-size: 24px;
+  }
+}
+
 h3 {
   font-weight: 900;
+
+  @media only screen and (max-width: 540px) {
+    font-size: 16px;
+  }
 }
 
 h4 {
@@ -77,6 +88,19 @@ a {
 
 .border-right {
   border-right: 1px solid #bfbfbf;
+}
+
+.ui-autocomplete {
+  max-height: 100px;
+  overflow-y: auto;
+  /* prevent horizontal scrollbar */
+  overflow-x: hidden;
+}
+/* IE 6 doesn't support max-height
+* we use height instead, but this forces the menu to always be this tall
+*/
+* html .ui-autocomplete {
+  height: 100px;
 }
 
 @mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {

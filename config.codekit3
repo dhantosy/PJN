@@ -1127,6 +1127,16 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/assets/css/style1.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/assets/css/style1-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/assets/fonts/pjn.eot": {
 		"cB": 0,
 		"ft": 8192,
@@ -1223,6 +1233,36 @@
 		"opt": 1,
 		"oT": 1,
 		"q": 100
+		},
+	"/assets/images/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 922,
+		"oA": 0,
+		"oAP": "/assets/images/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 1663,
+		"oA": 0,
+		"oAP": "/assets/images/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/images/favicon.ico",
+		"oF": 0
 		},
 	"/assets/images/gallery-1.jpg": {
 		"ft": 16384,
@@ -1342,6 +1382,17 @@
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/graphic-result.png": {
+		"ft": 32768,
+		"iS": 68354,
+		"oA": 0,
+		"oAP": "/assets/images/graphic-result.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -1523,6 +1574,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/assets/js/list.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/list-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/assets/js/script-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1555,6 +1617,14 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/faqs copy.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/faqs copy.php",
+		"oF": 0
 		},
 	"/faqs.html": {
 		"cB": 0,
@@ -1610,6 +1680,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/login.html",
+		"oF": 0
+		},
+	"/result.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/result.html",
 		"oF": 0
 		},
 	"/thankyou.html": {

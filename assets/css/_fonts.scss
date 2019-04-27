@@ -3,12 +3,12 @@
 
 @font-face {
   font-family: 'pjn';
-  src: url('../fonts/pjn.eot?90360183');
-  src: url('../fonts/pjn.eot?90360183#iefix') format('embedded-opentype'),
-       url('../fonts/pjn.woff2?90360183') format('woff2'),
-       url('../fonts/pjn.woff?90360183') format('woff'),
-       url('../fonts/pjn.ttf?90360183') format('truetype'),
-       url('../fonts/pjn.svg?90360183#pjn') format('svg');
+  src: url('../fonts/pjn.eot?75502077');
+  src: url('../fonts/pjn.eot?75502077#iefix') format('embedded-opentype'),
+       url('../fonts/pjn.woff2?75502077') format('woff2'),
+       url('../fonts/pjn.woff?75502077') format('woff'),
+       url('../fonts/pjn.ttf?75502077') format('truetype'),
+       url('../fonts/pjn.svg?75502077#pjn') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -18,7 +18,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'pjn';
-    src: url('../font/pjn.svg?90360183#pjn') format('svg');
+    src: url('../font/pjn.svg?75502077#pjn') format('svg');
   }
 }
 */
@@ -66,5 +66,6 @@
 .icon-linkedin:before { content: '\f0e1'; } /* '' */
 .icon-angle-circled-left:before { content: '\f137'; } /* '' */
 .icon-angle-circled-right:before { content: '\f138'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
 .icon-left:before { content: '\f177'; } /* '' */
 .icon-right:before { content: '\f178'; } /* '' */

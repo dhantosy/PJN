@@ -159,7 +159,7 @@
       background-color: #fff;
       border-radius: 50px;
       color: #2b7deb;
-      padding: 5px 30px 5px 5px;
+      padding: 5px 30px 5px 60px;
       margin: 20px;
       font-size: 18px;
       text-transform: uppercase;
@@ -196,12 +196,26 @@
       letter-spacing: 2px;
       text-transform: none;
       position: relative;
+      left: -55px;
 
       @media only screen and (max-width: 991px) {
         height: 50px;
         width: 50px;
         font-size: 10px;
         padding-top: 16px;
+      }
+
+      + span {
+        position: relative;
+        left: -50px;
+        display: inline-block;
+
+        @media only screen and (max-width: 480px) {
+          position: absolute;
+          left: 70px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
       }
     }
   }

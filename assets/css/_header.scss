@@ -142,7 +142,7 @@ nav {
     float: right;
     margin-top: 25px;
     z-index: 2;
-    padding-right: 140px;
+    padding-right: 115px;
 
     @media only screen and (max-width: 900px) {
       padding-right: 280px;
@@ -154,6 +154,8 @@ nav {
     }
 
     .btn__main {
+      margin-right: 10px;
+      font-size: 14px;
 
       @media only screen and (max-width: 991px) {
         font-size: 12px;
@@ -162,13 +164,17 @@ nav {
       @media only screen and (max-width: 900px) {
         display: none;
       }
+
+      &.go-form-step {
+        background-color: #faa625;
+      }
     }
 
     img {
       top: -46px;
       right: 0;
       position: absolute;
-      max-width: 35%;
+      max-width: 40%;
     }
   }
 

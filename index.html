@@ -313,7 +313,7 @@
               <h3>Lorem ipsum dolor sit amet.</h3>
             </div>
             <div class="section__contact--form">
-              <form action="">
+              <form action="" onsubmit="openModal()">
                 <div class="row row-no-gutters">
                   <div class="col-xs-12 col-sm-6">
                     <input type="text" placeholder="Nama Lengkap"  class="form-control" required>
@@ -341,6 +341,15 @@
         </div>
       </div>
     </section>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-thankyou">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <h3>Terima Kasih!</h3>
+          <p>Pesan kamu sudah terkirim! pesan kamu akan dibalas dalam hari kerja di jam 8 pagi - 5 sore.</p>
+        </div>
+      </div>
+    </div>
 
     <section class="section__register">
       <div class="container">
@@ -370,7 +379,7 @@
               </div>
               <div class="social__item">
                 <a href="" target="_blank">
-                  <i class="icon-twitter"></i>
+                  <i class="icon-instagram"></i>
                 </a>
               </div>
               <div class="social__item">

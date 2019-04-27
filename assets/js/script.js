@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+  $("#contact form").on('submit', function(e){
+    $('#modal-thankyou').modal('show');
+    e.preventDefault();
+  });
+
   if ($(window).width() < 481) {
     $(window).scroll(function() {
       var documentScrolled = $(document).scrollTop();
